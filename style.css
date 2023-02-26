@@ -1,0 +1,106 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #040505;
+    font-family: Courier New, Courier;
+    color: #E2A302;
+    font-size: .9vw;
+}
+.welcome{
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    background: rgba(50,50,50,20%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.welcome button{
+    padding: .6rem 8rem;
+    border: none;
+    background: rgba(100,100,100, 70%);
+    color: #ddd;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.welcome button:hover{
+    background: rgba(150,150,150, 70%);
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logos pre {
+    margin: 1rem;
+}
+
+.content {
+    line-height: 1.5;
+}
+
+.vertical {
+    white-space: pre-line;
+}
+
+.content {
+    display: flex;
+}
+
+.closeline {
+    margin-left: auto;
+}
+
+.wrap {
+    display: flex;
+}
+
+p,
+pre {
+    margin: 0;
+    padding: 0;
+}
+
+.personnels .text {
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+    flex-wrap: wrap-reverse;
+}
+
+#aperture,
+#radiation,
+#atom,
+#heart,
+#fire,
+#checkmark,
+#explosion,
+#blackmesa,
+#cake,
+#glados,
+#companioncube,
+#lightbulb {
+    display: none;
+}
+
+#personnelTypeWriter {
+    height: 3rem;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.break{
+    margin-bottom: 1rem;
+}
+
+@media(max-width: 1300px) {
+    body {
+        font-size: 1.8vh;
+    }
+}
